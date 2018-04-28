@@ -56,11 +56,9 @@ end
 
 def runner
   welcome
-  initial_round 
-  loop do  #try a loop!
+  initial_round
+  until card_total > 21
     hit?
-      if card_total > 21
-        return "End of Game"
-      end
-  end
+    end
+  return "Game over"
 end
