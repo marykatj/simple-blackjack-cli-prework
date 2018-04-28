@@ -60,5 +60,5 @@ def runner
   until card_total > 21
     card_total = hit?(card_total)
   end
-  return "Game over"
+  return "Sorry, you hit #{card_total}. Thanks for playing!"
 end
