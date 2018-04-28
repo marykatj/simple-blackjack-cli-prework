@@ -50,6 +50,7 @@ def invalid_command
   prompt_user
 end
 
+
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
@@ -60,5 +61,5 @@ def runner
   until card_total > 21
     card_total = hit?(card_total)
   end
-  return "Sorry, you hit #{card_total}. Thanks for playing!"
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
